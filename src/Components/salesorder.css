@@ -1,0 +1,42 @@
+/* modal-like overlay (simple, not Bootstrap modal) */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal-card {
+  background: #fff;
+  width: 800px;
+  max-width: 100%;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* small tweaks to mimic SAP B1 grid style */
+.table td, .table th {
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+.card-title { font-weight: 600; }
+
+/* compact input style */
+.form-control.form-control-sm {
+  height: 34px;
+  padding: 4px 8px;
+}
+
+/* subtle focus */
+.form-control:focus {
+  box-shadow: 0 0 0 0.125rem rgba(0,123,255,0.12);
+}
+
+/* small spacing for header buttons */
+.card .btn { font-size: 13px; }
